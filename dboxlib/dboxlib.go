@@ -30,13 +30,13 @@ import(
 const(
 	api_url = "https://api.dropbox.com/2"
 	content_url = "https://content.dropboxapi.com/2"
-	cfg_file = "C:/Users/ARC/.config/jagoodrop.yml"
+	cfg_file = "pat/to/config.yml" //FIXME
 )
 
 var(
-	users = map[string]string{"xiconet": "0", "jcoxi": "1", "jcoxinet": "2", "coxinet": "3"}
+	users = map[string]string{"user0": "0", "user1": "1", ..., "usern": "n"} // FIXME
 	audioTypes = []string{".mp3", ".flac", ".ape", ".wav", ".wv", ".mpc", ".ogg", ".m4a"}
-	unhandled = []string{".ape", ".wv", ".wav"}
+	unhandled = []string{".ape", ".wv", ".wav"} // unhandled by foobar2000 but VLC is OK
 	Chunksize = int64(8*1024*1024)
 )
 
