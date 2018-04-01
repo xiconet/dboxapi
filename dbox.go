@@ -12,13 +12,12 @@ import(
 )
 
 const(
-	cfg_file = "C:/Users/ARC/.config/jagoodrop.yml"
+	cfg_file = "path/to/config.yml" //FIXME
 	api_url = "https://api.dropbox.com/2"
 )
 
 var(
-	users = map[string]string{"xiconet": "0", "jcoxi": "1", "jcoxinet": "2", "coxinet": "3"}
-	chunksize = int64(8*1024*1024)
+	users = map[string]string{"user0": "0", "user1": "1", ... "usern": "n"} // FIXME
 )
 
 func Userlist() (u []string) {
